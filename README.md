@@ -30,14 +30,14 @@ I realized this project in Node.js under MySql with the help of the framework Ex
 
 ## Skills:
 
-Micro-framework
-Advanced user accounts
-Real time web
-Geolocation
-Security / Data validation
-Security
-DB & Data
-Web
+-Micro-framework
+-Advanced user accounts
+-Real time web
+-Geolocation
+-Security / Data validation
+-Security
+-DB & Data
+-Web
 
 # how to use:
 ```
