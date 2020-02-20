@@ -1,0 +1,8 @@
+{
+    "dev": {
+        "host": "localhost",
+        "driver": "mysql",
+        "user": "root",
+        "password": "tiger"
+    }
+  }
