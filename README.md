@@ -28,7 +28,7 @@ I realized this project in Node.js under MySql with the help of the framework Ex
 - Mysql: https://www.mysql.com/
 - Socket.io: https://socket.io/
 
-## Skills:
+## Skills
 
 - Micro-framework
 - Advanced user accounts
@@ -39,7 +39,7 @@ I realized this project in Node.js under MySql with the help of the framework Ex
 - DB & Data
 - Web
 
-# how to use:
+# how to use
 ```
 
 Run the script to hydrate the database which contains more than 500 profiles
@@ -96,10 +96,6 @@ About :
  Blocked List : 
  ```
  ![Blocked List](https://github.com/Ysrbolles/Matcha/blob/master/Images/Screen%20Shot%202020-01-18%20at%206.56.58%20PM.png)
-```
-Notification :
-```
-![Notification](https://github.com/Ysrbolles/Matcha/blob/master/Images/Screen%20Shot%202020-01-18%20at%206.57.38%20PM.png)
 
 ## Authors
 
