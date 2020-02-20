@@ -1,0 +1,12 @@
+html, body {
+    height:100%;
+}
+#wrapper {
+    min-height: 100%;
+}
+.dropdown-menu.show {
+    color: black;
+}
+#matching-box .btn-group label {
+    margin-right: 10px;
+}
