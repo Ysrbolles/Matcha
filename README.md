@@ -11,23 +11,43 @@ like them, and chat with those who have liked them in return.
 
 I realized this project in Node.js under MySql with the help of the framework Express.js
 
+## Features
+
+- Registration and login
+- User profile
+- User experience
+- Research and filter users
+- Real time chat
+- Real time notification system
+- Using Google API
+
+### Frameworks
+
+- Node.js: https://nodejs.org/
+- Express: http://expressjs.com/
+- Mysql: https://www.mysql.com/
+- Socket.io: https://socket.io/
+
 ## Skills:
 
 Micro-framework
-Comptes utilisateur avancés
-Web temps réel
-Géolocalisation
-Sécurité / Validation de données
+Advanced user accounts
+Real time web
+Geolocation
+Security / Data validation
 Security
 DB & Data
 Web
+
 # how to use:
 ```
-Lance le script pour hydrater la base donnes qui contient plus de 500 profils
-cd client
+
+Run the script to hydrate the database which contains more than 500 profiles
+client cd
 serve -s dist
 cd Api
-npm run dev 
+npm run dev
+
 ```
 
 ## Presentation pictures
