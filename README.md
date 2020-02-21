@@ -76,7 +76,7 @@ About :
  Fats Matching :
  ```
  ![Fats Matching](https://github.com/Ysrbolles/Matcha/blob/master/Images/Screen%20Shot%202020-01-18%20at%206.56.14%20PM.png)
-
+ ```
  Browsing :
  ```
  ![Browsing](https://github.com/Ysrbolles/Matcha/blob/master/Images/Screen%20Shot%202020-01-18%20at%206.55.25%20PM.png)
