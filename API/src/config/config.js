@@ -19,13 +19,13 @@ const config = {
             PASS: process.env.DB_PASSWORD || 'tiger'
         },
         MAIL: {
-            USER: process.env.MAIL_USER || 'ysrbolles@gmail.com',
-            PASS: process.env.MAIL_PASSWORD || 'vhcretlphmeqgjkf',
-            ADMIN: process.env.MAIL_ADMIN || 'ysrbolles@gmail.com'
+            USER: process.env.MAIL_USER,
+            PASS: process.env.MAIL_PASSWORD,
+            ADMIN: process.env.MAIL_ADMIN
         },
         JWT: {
             DURATION: 60 * 15,
-            SECRET: process.env.SECRET_KEY || 'ABFA422265CE21265CDECF71CD8DF',
+            SECRET: process.env.SECRET_KEY,
         }
     },
     development: {
@@ -42,7 +42,7 @@ const config = {
         MAIL: {
           USER: process.env.MAIL_USER,
           PASS: process.env.MAIL_PASS,
-          ADMIN: process.env.MAIL_ADMIN || 'ysrbolles@gmail.com',
+          ADMIN: process.env.MAIL_ADMIN,
         },
         JWT: {
           DURATION: 86400,
@@ -63,7 +63,7 @@ const config = {
         MAIL: {
           USER: process.env.MAIL_USER,
           PASS: process.env.MAIL_PASS,
-          ADMIN: process.env.MAIL_ADMIN || 'ysrbolles@gmail.com',
+          ADMIN: process.env.MAIL_ADMIN,
         },
         JWT: {
           DURATION: 84600,

@@ -378,12 +378,12 @@ Registration(user){
       let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-        user: 'ysrbolles@gmail.com',
-        pass: 'vhcretlphmeqgjkf'
+        user: 'email',
+        pass: 'password'
         }
         })
       let mailOptions = {
-        from: 'ysrbolles@gmail.com',
+        from: 'email',
         to: email,
         subject: subject,
         html: html,
