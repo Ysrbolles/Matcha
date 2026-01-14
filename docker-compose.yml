@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: $~Th3F
+      MYSQL_DATABASE: Matcha
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./API/DATABASE/migrations/sqls/matcha.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - matcha_net
+
+  api:
+    build:
+      context: ./API
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "1337:1337"
+    environment:
+      NODE_ENV: production
+      DB_HOST: db
+      DB_NAME: Matcha
+      DB_USER: root
+      DB_PASSWORD: $~Th3F
+    depends_on:
+      - db
+    volumes:
+      - ./API/src:/app/src
+      - ./API/package.json:/app/package.json
+      - anm:/app/node_modules
+    networks:
+      - matcha_net
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      VUE_APP_API_URL: http://localhost:1337
+    depends_on:
+      - api
+    volumes:
+      - ./client/src:/app/src
+      - ./client/public:/app/public
+      - cnm:/app/node_modules
+    networks:
+      - matcha_net
+
+volumes:
+  mysql_data:
+  anm:
+  cnm:
+
+networks:
+  matcha_net:
+    driver: bridge
